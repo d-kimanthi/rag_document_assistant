@@ -1,0 +1,39 @@
+[project]
+name = "rag-document-assistant"
+version = "0.1.0"
+description = "RAG document assistant"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "beautifulsoup4",
+    "black",
+    "tiktoken",
+    "openai",
+    "unstructured",
+    "nltk",
+    "fastapi",
+    "jinja2",
+    "uvicorn",
+    "streamlit",
+    "streamlit-chat",
+    "tqdm",
+    "isort",
+    "langchainhub",
+    "firecrawl-py",
+    "langchain-community",
+    "langsmith",
+    "pillow",
+    "langchain-tavily",
+    "langchain-pinecone",
+    "certifi",
+    "langchain-chroma",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipykernel",
+]
+
+[tool.uv]
+package = false
+prerelease = "allow"
