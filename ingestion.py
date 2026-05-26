@@ -85,7 +85,7 @@ async def main():
     tavily_crawl_results = tavily_crawl.invoke(
         {
             "url": "https://python.langchain.com",
-            "max_depth": 1,
+            "max_depth": 3,
             "extract_depth": "advanced",
             "instructions": "Documentatin relevant to ai agents",
         }
